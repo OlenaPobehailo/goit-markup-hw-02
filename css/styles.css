@@ -43,7 +43,7 @@ body {
     line-height: 1.19;
 }
 
-.logo span {
+.accent {
     color: var(--accent-color);
 }
 
@@ -61,7 +61,7 @@ body {
     color: var(--accent-color);
 }
 
-.contacts .link {
+.header-contacts .link {
     color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -69,8 +69,8 @@ body {
     letter-spacing: 0.02em;
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
+.header-contacts .link:hover,
+.header-contacts .link:focus {
     color: var(--accent-color);
 }
 
@@ -129,7 +129,6 @@ body {
 }
 
 .feature-list .text {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
@@ -155,7 +154,6 @@ body {
 }
 
 .team-list .text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -171,14 +169,14 @@ body {
     color: var(--primary-white-color);
 }
 
-.contact-list .link {
+.footer-contacts .link {
     color: var(--transparent-white-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
 
-.contact-list .address {
+.footer-contacts .address {
     color: var(--primary-white-color);
 }
 
