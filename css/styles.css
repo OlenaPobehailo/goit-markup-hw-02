@@ -70,7 +70,9 @@ body {
 }
 
 .header-contacts .link:hover,
-.header-contacts .link:focus {
+.header-contacts .link:focus,
+.footer-contacts .link:hover,
+.footer-contacts .link:focus {
     color: var(--accent-color);
 }
 
@@ -104,21 +106,22 @@ body {
     text-transform: uppercase;
 }
 
-/* 
 .solutions .order-button {
     width: 216px;
     height: 50px;
-
+    color: var(--primary-white-color);
     background: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
     text-align: center;
-} */
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
 
 
-
-
-/* Features */
+/* Styles for feacher list */
 
 .feature-list .title {
     color: var(--secondary-text-color);
@@ -133,7 +136,7 @@ body {
     line-height: 1.71;
 }
 
-/* Team */
+/* Styles for Team section */
 .team-section {
     background-color: var(--secondary-bg-color);
 }
@@ -159,7 +162,7 @@ body {
     text-align: center;
 }
 
-/* Footer */
+/* Styles for Footer */
 
 .page-footer {
     background-color: var(--dark-bg-color);
@@ -181,10 +184,40 @@ body {
 }
 
 
-/* =========================== */
 
-/*===    Portfolio   ===*/
+/* ========================================== */
+
+/*===    Styles for Portfolio   ===*/
+
+.button {
+    height: 38px;
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-text-color);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+
 
 .portfolio-item .title {
     color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-item .text {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
 }
