@@ -2,6 +2,7 @@
     --primary-text-color: #757575;
     --secondary-text-color: #212121;
     --accent-color: #2196f3;
+    --dark-accent-color: #188CE8;
     --primary-white-color: #ffffff;
     --transparent-white-color: rgba(255, 255, 255, 0.6);
     --secondary-bg-color: #F5F4FA;
@@ -12,6 +13,7 @@ body {
     color: var(--primary-text-color);
     background-color: var(--primary-white-color);
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
     letter-spacing: 0.03em;
 }
 
@@ -21,6 +23,19 @@ body {
 
 .link {
     text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 
@@ -34,14 +49,14 @@ body {
     line-height: 1.19;
 }
 
-.accent {
+.accent,
+.site-nav .link.current {
     color: var(--accent-color);
 }
 
 .site-nav .link {
     color: var(--secondary-text-color);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
@@ -52,10 +67,9 @@ body {
 }
 
 .header-contacts .link {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14px;
     letter-spacing: 0.02em;
 }
 
@@ -72,7 +86,6 @@ body {
 
 .section-title {
     color: var(--secondary-text-color);
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -100,7 +113,7 @@ body {
     height: 50px;
     color: var(--primary-white-color);
     background: var(--accent-color);
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -109,19 +122,20 @@ body {
     cursor: pointer;
 }
 
-
+.solutions .order-button:focus,
+.solutions .order-button:hover{
+    background: var(--dark-accent-color);
+}
 
 /* Styles for feature list */
 
 .feature-list .title {
     color: var(--secondary-text-color);
-    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
 .feature-list .text {
-    font-size: 14px;
     line-height: 1.71;
 }
 
@@ -138,7 +152,7 @@ body {
 }
 
 .team-list .item {
-    text-align: center;
+    background-color: var(--primary-white-color);
 }
 
 .team-list .title {
@@ -168,9 +182,8 @@ body {
 
 .footer-contacts .link {
     color: var(--transparent-white-color);
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
+    font-style: normal;
 }
 
 .footer-contacts .address {
@@ -187,7 +200,7 @@ body {
     height: 38px;
     background-color: var(--secondary-bg-color);
     color: var(--secondary-text-color);
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63px;
