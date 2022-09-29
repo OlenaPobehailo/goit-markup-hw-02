@@ -130,6 +130,7 @@ body {
 /* Styles for feature list */
 
 .feature-list .title {
+    font-size: 14px;
     color: var(--secondary-text-color);
     line-height: 1.14;
     text-transform: uppercase;
